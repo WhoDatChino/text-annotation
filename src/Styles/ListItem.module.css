@@ -1,0 +1,32 @@
+.listItem {
+  display: flex;
+  justify-content: space-between;
+  height: 2rem;
+  padding-left: 5px;
+  margin-bottom: 2px;
+}
+
+.listItem:hover {
+  background-color: #7a2cbf4b;
+}
+.listItem:hover .deleteBtn {
+  background-color: whitesmoke;
+}
+
+.textContainer {
+  display: flex;
+  align-items: center;
+}
+
+.listItem p {
+  text-indent: 3px;
+  font-size: 0.7rem;
+}
+
+.deleteBtn {
+  min-width: 1.5rem;
+  height: auto;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}

@@ -1,0 +1,59 @@
+.tagdropdown {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.tagTitle {
+  height: var(--button-height);
+  padding: var(--button-padding);
+  margin: var(--button-margin);
+  border-radius: var(--button-border-radius);
+  color: whitesmoke;
+  font-weight: 600;
+  background-color: var(--pill-button-colour);
+  border: 3px solid var(--pill-button-colour);
+  width: 8rem;
+  transition: all 150ms ease;
+  cursor: pointer;
+}
+
+.tagdropdown.active::before {
+  opacity: 1;
+  transform: translate(100%, -0%) rotate(45deg);
+}
+
+.menu {
+  list-style: none;
+  position: absolute;
+  left: calc(var(--button-padding) / 2);
+  top: 0%;
+  background-color: whitesmoke;
+  border-radius: 8px;
+  width: 8rem;
+  border-radius: 0 0 1rem 1rem;
+  max-height: 15rem;
+  min-height: 2rem;
+  overflow-y: auto;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 150ms ease, transform 150ms ease;
+  font-size: 1rem;
+}
+
+.tagdropdown.active .menu {
+  opacity: 1;
+  transform: translateY(2.5rem);
+  pointer-events: auto;
+  border-top: 1px solid var(--pill-button-colour);
+  border-right: 3px solid var(--pill-button-colour);
+  border-bottom: 3px solid var(--pill-button-colour);
+  border-left: 3px solid var(--pill-button-colour);
+}
+
+.tagdropdown.active .tagTitle {
+  border-bottom: none;
+  background-color: var(--pill-button-colour);
+  color: white;
+  border-radius: 1rem 1rem 0 0;
+}

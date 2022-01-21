@@ -1,0 +1,35 @@
+.tagbox {
+  max-width: 80%;
+  width: fit-content;
+  max-height: 12rem;
+  background-color: whitesmoke;
+  margin: 5px auto;
+  border-radius: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.wordbox {
+  max-height: 6rem;
+  padding: 0 10px;
+  overflow-y: auto;
+}
+
+.tagbox form {
+  display: flex;
+  flex-direction: row;
+}
+
+.tagbox form input {
+  height: 1rem;
+  width: 1rem;
+  margin: 5px 5px;
+}
+
+.tagbox label {
+  color: #635f5d;
+  font-weight: bold;
+}

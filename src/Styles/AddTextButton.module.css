@@ -1,0 +1,12 @@
+.addText {
+  height: var(--button-height);
+  margin: var(--button-margin);
+  padding: var(--button-padding);
+  border-radius: var(--button-border-radius);
+  border: var(--pill-button-colour) 3px solid;
+  color: var(--pill-button-colour);
+  font-weight: 600;
+  background-color: whitesmoke;
+  width: 6.5rem;
+  cursor: pointer;
+}

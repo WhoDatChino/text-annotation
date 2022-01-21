@@ -1,13 +1,91 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap");
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --button-height: 2.5rem;
+  --button-margin: 5px;
+  --button-padding: 10px;
+  --button-border-radius: calc(var(--button-height) / 2);
+  --pill-button-colour: rgb(123, 44, 191);
+
+  --confirm-btn-colour: #06d6a0;
+  --cancel-btn-colour: #ae2012;
+  --form-btn-height: 2.2rem;
+  --form-btn-width: calc((var(--form-btn-height) * 3));
+  --form-tag-height: calc(var(--form-btn-height) * 0.75);
+  --form-tag-width: calc(var(--form-btn-width) - var(--form-btn-height));
+  --form-tag-extension-width: calc(var(--form-btn-height) / 2);
+  --form-font-size-button: calc(var(--form-btn-height) * 0.425);
+}
+
+body {
+  background-image: linear-gradient(
+    to top right,
+    #5a189a,
+    #7b2cbf,
+    #9d4edd,
+    #c77dff,
+    #e0aaff
+  );
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  min-width: 70rem;
+  max-width: 60rem;
+  max-height: 45rem;
+  min-height: 45rem;
+  background-image: linear-gradient(
+    to top right,
+    rgba(182, 180, 180, 0.404),
+    whitesmoke
+  );
+  position: relative;
+  border-radius: 2rem;
+  box-shadow: 3px 3px 9px rgba(10, 0, 10, 0.514);
+}
+
+header {
+  width: 100%;
+}
+
+header h1 {
+  text-align: center;
+  margin: 10px 0;
+  padding-top: 5px;
+}
+
+nav {
+  padding: 4px;
+}
+
+.interactions-container {
+  padding: 8px 10px;
+}
+
+.tags-container {
+  padding: 8px 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-area {
+  height: 20rem;
+  min-width: 20rem;
+  margin: 10px auto;
+  overflow-y: auto;
+}
+
+.text-area p {
+  margin: 8px 25px;
 }
