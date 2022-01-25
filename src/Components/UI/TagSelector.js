@@ -1,6 +1,6 @@
 import styles from "../../Styles/TagSelector.module.css";
 
-import { useRef, useState } from "react/cjs/react.development";
+import { useRef, useState } from "react";
 import { ConfirmButton } from "../Buttons/ConfirmButton";
 
 export const TagSelector = ({ wordSelection, tagArr, newAnnotations }) => {
